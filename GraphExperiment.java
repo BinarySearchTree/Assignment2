@@ -52,7 +52,6 @@ public class GraphExperiment {
 
 		for (int v : V_VALUES) {
 			for (int e : E_VALUES) {
-
 				// Generate random dataset
 				Map<String, Vertex> vertices = GraphExperiment.generateVertices(v);
 				Set<Edge> edges = GraphExperiment.generateEdges(vertices, e);
