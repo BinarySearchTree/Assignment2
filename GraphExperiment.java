@@ -19,10 +19,7 @@ public class GraphExperiment {
 					 * generates a set of edges that connects these vertices randomly. The maximum
 					 * number of possible edges is given by the formula v*(v-1)
 					 */
-		Set<Edge> edges = new HashSet<>();
-		int maxPossibleEdges = vertices.size() * (vertices.size() - 1);
-		int numEdges = Math.min(e, maxPossibleEdges);
-		while (edges.size() < numEdges) {
+		SeumEdges) {
 			int sourceIndex = random.nextInt(vertices.size());
 			int destinationIndex = random.nextInt(vertices.size());
 			if (sourceIndex == destinationIndex) {
