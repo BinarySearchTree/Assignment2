@@ -12,14 +12,7 @@ import java.util.Set;
 public class GraphExperiment {
 	private static final Random random = new Random();
 
-	public static Map<String, Vertex> generateVertices(int v) { // generates a map of vertices, with keys "Node0"
-		// through "Node(v-1)"
-		Map<String, Vertex> vertices = new HashMap<>();
-		for (int i = 0; i < v; i++) {
-			vertices.put("Node" + i, new Vertex("Node" + i));
-		}
-		return vertices;
-	}
+	
 
 	public static Set<Edge> generateEdges(Map<String, Vertex> vertices,
 			int e) {/*
