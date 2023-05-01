@@ -324,30 +324,4 @@ public class Graph {
 		}
 		return true;
 	}
-
-	/**
-	 * A main routine that: 1. Reads a file containing edges (supplied as a
-	 * command-line parameter); 2. Forms the graph; 3. Repeatedly prompts for two
-	 * vertices and runs the shortest path algorithm. The data file is a sequence of
-	 * lines of the format source destination cost
-	 */
-	/*
-	 * public static void main(String[] args) { Graph g = new Graph(); try {
-	 * FileReader fin = new FileReader(args[0]); try (Scanner graphFile = new
-	 * Scanner(fin)) { // Read the edges and insert String line; while
-	 * (graphFile.hasNextLine()) { line = graphFile.nextLine(); StringTokenizer st =
-	 * new StringTokenizer(line);
-	 * 
-	 * try { if (st.countTokens() != 3) {
-	 * System.err.println("Skipping ill-formatted line " + line); continue; } String
-	 * source = st.nextToken(); String dest = st.nextToken(); int cost =
-	 * Integer.parseInt(st.nextToken()); g.addEdge(source, dest, cost); } catch
-	 * (NumberFormatException e) { System.err.println("Skipping ill-formatted line "
-	 * + line); } } } } catch (IOException e) { System.err.println(e); }
-	 * 
-	 * System.out.println("File read..."); System.out.println(g.vertexMap.size() +
-	 * " vertices");
-	 * 
-	 * Scanner in = new Scanner(System.in); while (processRequest(in, g)) ; }
-	 */
 }
